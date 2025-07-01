@@ -167,4 +167,6 @@ async def rule(ctx):
     await ctx.send(mystr2)
 
 
-os.environ['DISCORD_TOKEN']
+TOKEN = os.getenv('DISCORD_TOKEN')
+bot.run(TOKEN)
+
